@@ -4,6 +4,7 @@
     "dark": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png",
     "light": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png"
   },
+  "favicon": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png",
   "colors": {
     "primary": "#0F172A",
     "light": "#334155",
