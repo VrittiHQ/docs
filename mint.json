@@ -1,0 +1,30 @@
+{
+  "name": "Vritti",
+  "logo": {
+    "dark": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png",
+    "light": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png"
+  },
+  "colors": {
+    "primary": "#0F172A",
+    "light": "#334155",
+    "dark": "#020617"
+  },
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "essentials/kiosk-setup"
+      ]
+    },
+    {
+      "group": "API Reference",
+      "pages": [
+        "api-reference/openapi"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/vrittihq",
+    "github": "https://github.com/VrittiHQ"
+  }
+}
