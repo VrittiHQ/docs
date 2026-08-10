@@ -27,21 +27,25 @@
   },
   "tabs": [
     {
-      "name": "Console",
-      "url": "console"
+      "name": "Getting Started",
+      "url": "index"
     },
     {
-      "name": "Lens",
-      "url": "lens"
+      "name": "Vritti Console",
+      "url": "console/overview"
     },
     {
-      "name": "People",
-      "url": "people"
+      "name": "Vritti Lens",
+      "url": "lens/hardware-setup"
+    },
+    {
+      "name": "Vritti People",
+      "url": "people/getting-started"
     }
   ],
   "navigation": [
     {
-      "group": "Getting Started",
+      "group": "Overview",
       "pages": [
         "index",
         "quickstart"
