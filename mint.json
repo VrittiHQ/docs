@@ -27,34 +27,28 @@
   },
   "tabs": [
     {
-      "name": "Getting Started",
-      "url": "index"
+      "name": "Console",
+      "url": "console"
     },
     {
-      "name": "Vritti Console",
-      "url": "console/overview"
+      "name": "Lens",
+      "url": "lens"
     },
     {
-      "name": "Vritti Lens",
-      "url": "lens/hardware-setup"
-    },
-    {
-      "name": "Vritti People",
-      "url": "people/getting-started"
+      "name": "People",
+      "url": "people"
     }
   ],
   "navigation": [
     {
-      "tab": "Getting Started",
-      "group": "Overview",
+      "group": "Getting Started",
       "pages": [
         "index",
         "quickstart"
       ]
     },
     {
-      "tab": "Vritti Console",
-      "group": "Console Administration",
+      "group": "Vritti Console",
       "pages": [
         "console/overview",
         "console/staff-management",
@@ -65,8 +59,7 @@
       ]
     },
     {
-      "tab": "Vritti Lens",
-      "group": "Kiosk Setup & Management",
+      "group": "Vritti Lens",
       "pages": [
         "lens/hardware-setup",
         "lens/provisioning",
@@ -75,8 +68,7 @@
       ]
     },
     {
-      "tab": "Vritti People",
-      "group": "Staff Mobile App",
+      "group": "Vritti People",
       "pages": [
         "people/getting-started",
         "people/punching-attendance",
