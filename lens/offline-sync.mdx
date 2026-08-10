@@ -1,0 +1,30 @@
+---
+title: "Offline Queue & Sync Engine"
+description: "How Vritti Lens operates during network outages with UUID idempotency."
+---
+
+# Offline Queue & Synchronization Engine
+
+Vritti Lens is engineered to function continuously during internet connectivity drops or power disruptions.
+
+## Architecture
+
+When an employee scans their face at a Vritti Lens kiosk:
+
+1. **Local Vector Comparison**: Face embeddings are processed locally on-device without calling an external API.
+2. **Local SQLite Event Queue**: Successful identifications generate an `AttendanceEvent` record assigned a unique UUIDv4 key, stored in the tablet's local SQLite database.
+3. **Audio-Visual Feedback**: The kiosk plays a confirmation audio tone ("Attendance Marked for [Staff Name]") immediately.
+
+## Automatic Sync Behavior
+
+- Vritti Lens runs a background sync worker that monitors network status.
+- Once Wi-Fi or cellular connectivity is restored, the queue sync worker flushes pending events in batch payloads (up to 50 events per batch) to the backend API.
+- **Idempotency Guarantee**: Because every scan event carries a unique client UUID key, network retries or duplicate uploads are deduplicated safely by the server without double-counting.
+
+## Monitoring Sync Status
+
+On the top header of the Vritti Lens scanning screen:
+
+- **Green Cloud Icon**: Fully synchronized. All events pushed to server.
+- **Orange Cloud Icon + Number (e.g. 14)**: Offline mode. Number indicates pending events stored in local queue.
+- **Red Warning Icon**: Sync error or invalid credentials. Tap to open diagnostic PIN screen.

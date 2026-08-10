@@ -1,5 +1,6 @@
 {
-  "name": "Vritti",
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Vritti Documentation",
   "logo": {
     "dark": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png",
     "light": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png"
@@ -7,20 +8,80 @@
   "favicon": "https://raw.githubusercontent.com/VrittiHQ/VrittiHQ/main/brand-assets/logo-banner.png",
   "colors": {
     "primary": "#0F172A",
-    "light": "#334155",
+    "light": "#4F46E5",
     "dark": "#020617"
   },
+  "topbarLinks": [
+    {
+      "name": "Website",
+      "url": "https://vritti.ai"
+    },
+    {
+      "name": "Console",
+      "url": "https://app.vritti.ai"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://app.vritti.ai/sign-up"
+  },
+  "tabs": [
+    {
+      "name": "Getting Started",
+      "url": "index"
+    },
+    {
+      "name": "Vritti Console",
+      "url": "console/overview"
+    },
+    {
+      "name": "Vritti Lens",
+      "url": "lens/hardware-setup"
+    },
+    {
+      "name": "Vritti People",
+      "url": "people/getting-started"
+    }
+  ],
   "navigation": [
     {
-      "group": "Getting Started",
+      "tab": "Getting Started",
+      "group": "Overview",
       "pages": [
-        "essentials/kiosk-setup"
+        "index",
+        "quickstart"
       ]
     },
     {
-      "group": "API Reference",
+      "tab": "Vritti Console",
+      "group": "Console Administration",
       "pages": [
-        "api-reference/openapi"
+        "console/overview",
+        "console/staff-management",
+        "console/attendance-geofencing",
+        "console/shifts-schedules",
+        "console/leave-management",
+        "console/payroll-compliance"
+      ]
+    },
+    {
+      "tab": "Vritti Lens",
+      "group": "Kiosk Setup & Management",
+      "pages": [
+        "lens/hardware-setup",
+        "lens/provisioning",
+        "lens/offline-sync",
+        "lens/troubleshooting"
+      ]
+    },
+    {
+      "tab": "Vritti People",
+      "group": "Staff Mobile App",
+      "pages": [
+        "people/getting-started",
+        "people/punching-attendance",
+        "people/face-enrollment",
+        "people/self-service"
       ]
     }
   ],

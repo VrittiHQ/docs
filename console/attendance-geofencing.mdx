@@ -1,0 +1,43 @@
+---
+title: "Attendance & Geofencing"
+description: "Monitoring attendance records, geofence radius rules, and manual corrections."
+---
+
+# Attendance & Geofencing Management
+
+Vritti tracks employee presence through an event-sourced architecture. Every punch or scan creates an immutable event log, which is aggregated into daily attendance summaries automatically.
+
+## Attendance Verification Modes
+
+Employees can mark attendance through two verified methods:
+
+1. **Biometric Face Recognition (Vritti Lens)**: Automatic hands-free face detection on tablet kiosk terminals.
+2. **Selfie + GPS Geofence (Vritti People)**: Verified selfie punch with high-accuracy GPS coordinates on mobile phones.
+
+## Campus Geofencing Setup
+
+Geofencing ensures that mobile attendance punches are valid only within designated physical boundaries of your institution.
+
+### Creating a Location Geofence Zone
+
+1. Navigate to **Attendance > Locations** in Vritti Console.
+2. Click **Add Campus Location**.
+3. Enter location name (e.g., Main Campus, Satellite Facility).
+4. Set the latitude and longitude coordinates, or use the interactive map picker.
+5. Define the **Allowed Radius** (recommended: 50 to 100 meters).
+6. Click **Save Location**.
+
+<Note>
+  If an employee attempts to punch via Vritti People outside the designated geofence radius, the punch will be rejected and logged as an out-of-bounds attempt.
+</Note>
+
+## Manual Attendance Corrections
+
+Administrators and HR managers can manually adjust attendance entries when necessary (e.g. forgotten punches or approved field work).
+
+1. Navigate to **Attendance > Daily Ledger**.
+2. Select the date and search for the employee.
+3. Click **Edit Entry** next to their record.
+4. Update status (Present, Half Day, Absent, On Duty) or punch times.
+5. Enter a required **Reason for Correction** for audit tracking.
+6. Click **Save Correction**.

@@ -1,0 +1,46 @@
+---
+title: "Kiosk Diagnostics & Troubleshooting"
+description: "Resolving common face recognition, camera, and sync issues on Vritti Lens."
+---
+
+# Kiosk Diagnostics & Troubleshooting
+
+This guide provides steps for resolving technical issues encountered while running Vritti Lens kiosks.
+
+## Common Issues & Solutions
+
+### Issue 1: Face Not Recognized
+
+- **Symptom**: Employee stands in front of camera, but screen displays "Face Not Recognized".
+- **Possible Causes**:
+  - Employee has not completed initial face profile enrollment.
+  - Lighting environment is too dark or backlit.
+  - Camera lens is smudged or dirty.
+- **Resolution**:
+  1. Clean the front camera lens with a microfiber cloth.
+  2. Verify that staff face vector profile is active in **Vritti Console**.
+  3. Re-enroll employee face profile via **Vritti People** or Console if facial appearance has changed significantly.
+
+### Issue 2: Offline Queue Not Flushing
+
+- **Symptom**: Cloud icon remains orange with pending queue count despite Wi-Fi connection.
+- **Resolution**:
+  1. Tap the top-right gear icon and enter your **Admin Security PIN**.
+  2. Check **Network Diagnostic Status**.
+  3. Click **Force Sync Now**.
+  4. If sync fails, verify that tablet clock time matches server time (NTP time synchronization).
+
+### Issue 3: Camera Stream Black or Frozen
+
+- **Resolution**:
+  1. Close the app and re-launch.
+  2. Ensure no other application (e.g. tablet device management software) is holding camera access.
+  3. Restart the Android tablet.
+
+## Accessing the Admin Diagnostic Menu
+
+To access internal device settings:
+
+1. Tap and hold the top title bar of Vritti Lens for 3 seconds.
+2. Enter the **Admin PIN** set during initial pairing.
+3. Access diagnostic options: **Re-sync Face Database**, **Test Audio Output**, **Force Sync Queue**, and **Unpair Device**.

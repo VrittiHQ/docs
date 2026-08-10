@@ -1,0 +1,36 @@
+---
+title: "Device Provisioning & Pairing"
+description: "Installing Vritti Lens APK and pairing tablet terminals via 6-digit Admin PIN."
+---
+
+# Vritti Lens Provisioning & Pairing
+
+Pairing links a physical tablet terminal running Vritti Lens to a specific campus location in your organization.
+
+## Step-by-Step Device Pairing
+
+<Steps>
+  <Step title="Step 1: Generate Activation PIN in Vritti Console">
+    1. Log in to **Vritti Console** on your browser.
+    2. Go to **Kiosks > Register Device**.
+    3. Select the target **Campus Location** where the tablet will be installed.
+    4. Enter a descriptive device name (e.g., Main Entrance Gate A).
+    5. Click **Generate Activation PIN**. A 6-digit single-use PIN will be displayed (valid for 15 minutes).
+  </Step>
+
+  <Step title="Step 2: Install Vritti Lens APK">
+    1. Download the official **Vritti Lens APK** onto your Android tablet.
+    2. Open the APK and grant required device permissions:
+       - **Camera Permission**: Required for real-time face detection.
+       - **Storage / Database**: Required for offline SQLite event queuing.
+  </Step>
+
+  <Step title="Step 3: Pair Device">
+    1. Launch **Vritti Lens** on the tablet.
+    2. Enter the 6-digit Activation PIN when prompted.
+    3. Click **Pair Kiosk Terminal**.
+    4. Set a secure **Admin Security PIN** on the tablet. This PIN is used by on-site managers to access diagnostic menus or unpair the device.
+  </Step>
+</Steps>
+
+Once paired, Vritti Lens automatically downloads active staff face vector models for your location and enters continuous scanning mode.

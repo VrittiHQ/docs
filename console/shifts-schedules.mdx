@@ -1,0 +1,36 @@
+---
+title: "Shifts & Schedules"
+description: "Configuring institutional shift templates, grace periods, late fines, and overtime rules."
+---
+
+# Shifts & Schedule Rules
+
+Vritti allows institutions to model flexible working hours, fixed shifts, rotational schedules, grace periods, and late entry calculations.
+
+## Creating Shift Templates
+
+1. Navigate to **Shifts** in Vritti Console.
+2. Click **Create Shift Template**.
+3. Fill in the shift configuration:
+   - **Shift Name**: (e.g. Standard Morning, Night Shift, Administrative Shift).
+   - **Start Time & End Time**: Expected arrival and departure times (e.g. 09:00 to 17:00).
+   - **Grace Period (Minutes)**: Buffer period allowed after start time (default: 15 minutes).
+   - **Half-Day Threshold**: Minimum hours required to qualify for a full day versus half day.
+4. Click **Save Shift**.
+
+## Shift Automation Rules
+
+Vritti automatically evaluates incoming attendance punches against assigned shift rules:
+
+- **On Time**: Punch-in occurs before shift start time + grace period.
+- **Late Entry**: Punch-in occurs after shift start time + grace period.
+- **Early Exit**: Punch-out occurs prior to designated shift end time.
+- **Half Day**: Total duration worked is below 50% of scheduled shift hours.
+- **Overtime**: Working hours exceeded past designated shift end time plus overtime threshold.
+
+## Assigning Shifts to Staff
+
+1. Go to **Shifts > Staff Assignment**.
+2. Select employees individually or filter by department.
+3. Choose the target shift template.
+4. Click **Apply Assignment**.

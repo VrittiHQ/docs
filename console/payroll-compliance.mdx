@@ -1,0 +1,41 @@
+---
+title: "Payroll & Statutory Compliance"
+description: "Executing monthly salary runs, calculating PF/ESI/PT deductions, and issuing payslips."
+---
+
+# Payroll & Indian Statutory Compliance
+
+Vritti automates monthly salary processing by integrating daily attendance summaries, leave loss-of-pay (LOP) deductions, overtime additions, and Indian statutory compliance rules.
+
+## Salary Structure Templates
+
+Salary structures define how an employee's gross monthly pay is broken down into earnings and deductions.
+
+### Default Earnings Components
+- **Basic Salary**: Typically 50% of gross salary.
+- **House Rent Allowance (HRA)**: 20% of basic salary.
+- **Dearness Allowance (DA)**: 10% of basic salary.
+- **Special Allowance**: Remaining balance of gross salary.
+
+### Default Statutory Deductions
+- **Employees' Provident Fund (EPF)**: 12% deduction on basic salary.
+- **Employees' State Insurance (ESI)**: 0.75% deduction on gross salary (applicable for gross salary under ₹21,000/month).
+- **Professional Tax (PT)**: State-level slab deduction (standard: ₹200/month).
+- **Tax Deducted at Source (TDS)**: Income tax deduction based on tax regime declaration.
+
+## Executing a Monthly Payroll Run
+
+1. Navigate to **Payroll > Process Payroll** in Vritti Console.
+2. Select the target **Pay Period (Month & Year)**.
+3. Click **Initiate Payroll Run**.
+4. Vritti automatically imports attendance data, calculates LOP deductions, computes net pay, and displays a review summary.
+5. Audit the calculated payslips for accuracy.
+6. Click **Finalize Payroll**.
+
+## Issuing & Distributing Payslips
+
+Once payroll is finalized:
+
+- Payslips are instantly published to the **Vritti People** app for employees to view and download as PDF files.
+- Automated email or messaging notifications can be dispatched to employees.
+- Administrators can download bulk monthly payslip packages or salary bank transfer sheets (Excel/CSV).
