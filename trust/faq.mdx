@@ -1,0 +1,44 @@
+---
+title: Frequently Asked Questions
+description: Common pre-purchase and setup questions regarding biometric hardware, offline functionality, and security.
+---
+
+# Frequently Asked Questions
+
+## Biometric Hardware & Setup
+
+### Can we use existing Android tablets for the Vritti Lens kiosk?
+Yes. Vritti Lens runs on standard Android tablets running Android 9.0 or higher. You do not need proprietary legacy biometric hardware. Any tablet with a front-facing camera can function as an attendance kiosk.
+
+### Do we need special biometric hardware or external scanners?
+No. Vritti Lens uses high-speed facial recognition using the tablet's built-in front camera. No fingerprint readers or external hardware modules are required.
+
+---
+
+## Offline Resiliency & Internet Uptime
+
+### What happens if the internet goes down at the gate or institution?
+Vritti Lens operates completely offline. Attendance scans continue to process immediately locally without delay. Scans are saved in a encrypted queue on the tablet and automatically synchronize with the central server once internet connectivity is restored.
+
+### Can staff scan attendance if the server is offline during peak shift hours?
+Yes. The local kiosk database handles verification locally so shift starts and ends are never blocked by network latency or internet outages.
+
+---
+
+## Security & Fraud Prevention
+
+### How does Vritti prevent buddy punching or photo spoofing?
+Vritti Lens includes built-in liveness detection. Presenting a printed photograph, video recording, or smartphone image of an employee will fail verification.
+
+### How does Vritti People prevent GPS location spoofing on staff mobile phones?
+The Vritti People application validates device GPS signals against physical geofence boundaries configured in Vritti Console. Fake GPS applications, mock location settings, and developer overrides are automatically detected and blocked.
+
+---
+
+## Payroll & Integration
+
+### Can we export payroll data to accounting software like Tally?
+Yes. Vritti Console exports standardized payroll summaries and detailed salary registers compatible with Tally, Excel, and custom accounting systems.
+
+### Does Vritti support non-standard shift schedules and night shifts?
+Yes. Vritti supports multi-shift configurations, flexible timing windows, overnight shifts spanning past midnight, and rotational shift schedules.

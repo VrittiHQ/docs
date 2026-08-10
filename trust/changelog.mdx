@@ -1,0 +1,37 @@
+---
+title: Product Changelog
+description: Recent feature additions, security enhancements, and platform updates across Vritti Console, Lens, and People.
+---
+
+# Release History & Velocity
+
+Track recent updates, feature rollouts, and stability enhancements across the Vritti product suite.
+
+---
+
+## Release 1.2.0 - Production Hardening & Compliance Update
+
+### Vritti Console
+- **Statutory Rules**: Added configurable EPF basic wage ceilings and state-specific Professional Tax (PT) slab rules.
+- **Audit Logging**: Enhanced administrative audit logging for manual attendance overrides and role changes.
+- **Report Generation**: Optimized monthly summary exports for EPF ECR format.
+
+### Vritti Lens
+- **Offline Reliability**: Enhanced SQLite queue persistence during extended network outages.
+- **Verification Velocity**: Reduced local face matching latency on budget tablet hardware.
+
+### Vritti People
+- **Geofence Enforcement**: Upgraded GPS accuracy verification and mock location detection rules.
+- **Self-Service**: Added downloadable PDF payslip views.
+
+---
+
+## Release 1.1.0 - Core Engine & Kiosk Sync
+
+### Platform Core
+- **Event-Sourced Ledger**: Shifted attendance summaries to derive directly from raw event logs.
+- **RBAC**: Expanded fine-grained role permissions for Super Admin, Admin, HR, Manager, and Staff roles.
+
+### Vritti Lens
+- **Kiosk Activation**: Introduced secure activation PIN provisioning flow for tablet onboarding.
+- **Liveness Detection**: Integrated image verification checks to block printed photo and screen playback spoofing.

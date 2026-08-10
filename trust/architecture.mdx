@@ -1,0 +1,47 @@
+---
+title: System Architecture Overview
+description: High-level architectural overview of Vritti Console, Vritti Lens, and Vritti People.
+---
+
+# Architecture Overview
+
+Vritti is built as an integrated staff tracking and management platform designed for reliability, offline resiliency, and regulatory compliance.
+
+## Platform Ecosystem
+
+```
++-------------------------------------------------------------------+
+|                           Vritti Engine                           |
+|      (FastAPI Backend / PostgreSQL Ledger / RBAC Authorization)    |
++-------------------------------------------------------------------+
+       ^                               ^                      ^
+       |                               |                      |
++--------------+               +---------------+       +--------------+
+| Vritti Lens  |               | Vritti Console|       | Vritti People|
+| (Kiosk App)  |               | (Web Admin)   |       | (Mobile App) |
++--------------+               +---------------+       +--------------+
+```
+
+### 1. Vritti Console (Web Admin Dashboard)
+The centralized administrative portal for HR managers, department heads, and organization leaders. Used for configuring departments, managing shifts, processing leave approvals, running payroll, and generating compliance reports.
+
+### 2. Vritti Lens (Kiosk Tablet App)
+An offline-resilient Android kiosk application positioned at campus entrances, gates, or hospital departments. Performs facial verification scans and queues attendance events locally.
+
+### 3. Vritti People (Mobile Self-Service)
+The mobile application for staff members to punch attendance via geofenced GPS verification, view shift rosters, apply for leave, and view monthly payslips.
+
+---
+
+## Core Architectural Concepts
+
+### Event-Sourced Attendance Ledger
+Attendance in Vritti is tracked using an immutable event ledger:
+- Every face scan or mobile punch generates an immutable **Attendance Event** (timestamp, location, verification method, device ID).
+- Daily attendance summaries (Present, Late, Half-Day, Absent) are derived directly from the immutable event log.
+- Manual HR edits or overrides do not overwrite raw event logs, preserving audit trails for compliance verification.
+
+### Offline Sync Engine
+- Kiosks store scans in a local encrypted SQLite database when internet connection is lost.
+- Unique event identifiers ensure that duplicate sync requests are safely ignored when reconnecting.
+- Auto-sync triggers seamlessly upon network restoration.

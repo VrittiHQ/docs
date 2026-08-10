@@ -1,0 +1,46 @@
+---
+title: Security, Privacy & DPDP Compliance
+description: Data protection guarantees, DPDP Act 2023 compliance, biometric privacy, and encryption standards.
+---
+
+# Security & Data Privacy
+
+Vritti is built with strict privacy-by-design principles to ensure full compliance with Indian regulations and protect staff data across educational institutions, healthcare facilities, and enterprise organizations.
+
+## Biometric Data Handling & Privacy
+
+### No Raw Photo Storage
+Vritti Lens and Vritti People do not store raw photos of employees. 
+
+- When an employee scans their face at a kiosk or submits a verification selfie, the image is processed immediately on the local device.
+- The scan is converted into an encrypted digital representation (a mathematical template).
+- The raw image file is immediately purged from memory and disk.
+- Reverse engineering the original face image from the encrypted template is mathematically impossible.
+
+### Employee Consent & Rights
+Under the Digital Personal Data Protection (DPDP) Act 2023:
+- Employees provide explicit digital consent before biometric enrollment.
+- Staff members can view their stored personal details at any time via the Vritti People mobile application.
+- Organizations can process data erasure requests upon staff offboarding in accordance with statutory retention mandates.
+
+## Data Encryption & Residency
+
+### Sovereign Data Storage
+All tenant databases, attendance logs, and payroll records are hosted on secure infrastructure located within the Republic of India. Data never leaves Indian jurisdiction.
+
+### Encryption Standards
+- **In Transit**: All communication between kiosk devices, mobile applications, and the backend server uses TLS 1.3 protocol over HTTPS.
+- **At Rest**: Tenant databases, backup snapshots, and encrypted employee profiles are protected using AES-256 bit encryption.
+
+## Access Control & Audit Trails
+
+### Role-Based Access Control (RBAC)
+Data access within Vritti Console is restricted based on administrative roles:
+- **Super Admin**: Full platform configuration and organizational settings.
+- **Admin**: Operational management across departments and locations.
+- **HR Manager**: Staff profiles, leave approvals, attendance summaries, and payroll calculations.
+- **Department Manager**: Team attendance viewing and leave approval permissions.
+- **Staff**: Self-service viewing of own records only.
+
+### Immutable Audit Logs
+Every administrative action—including manual attendance overrides, salary adjustments, role modifications, and configuration changes—is logged with timestamp, user ID, IP address, and changed values for compliance audits.

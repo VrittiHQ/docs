@@ -1,0 +1,47 @@
+---
+title: Deployment & Hosting Models
+description: Compare Self-Hosted On-Premise deployment vs Managed Cloud hosting for data sovereignty and control.
+---
+
+# Deployment Options
+
+Vritti supports flexible deployment models designed for educational campuses, hospitals, and enterprise operations with specific data sovereignty, infrastructure, or compliance requirements.
+
+## Comparison Overview
+
+| Feature | Self-Hosted (On-Premise) | Managed Cloud |
+| :--- | :--- | :--- |
+| **Data Location** | Your private server / VPS | Secure Indian Cloud VPS |
+| **Data Sovereignty** | 100% internal institutional control | Isolated tenant storage |
+| **Maintenance** | Managed by internal IT team | Automated updates & backups |
+| **Network Reliance** | Can operate strictly on local LAN | Requires internet connectivity |
+| **Hardware** | Standard Linux server / VM | Zero server infrastructure required |
+
+---
+
+## 1. Self-Hosted On-Premise
+
+The Self-Hosted deployment model allows institutions to run the complete Vritti platform inside their internal data center or private VPS.
+
+### Key Benefits
+- **Complete Data Sovereignty**: All employee biometric profiles, attendance records, and payroll data reside entirely within your institutional network boundary.
+- **Local Network Resiliency**: Attendance scanning on local WiFi/LAN functions continuously without relying on external internet uptime.
+- **Custom Security Integration**: Connect directly to internal firewalls, VPNs, and Active Directory / LDAP servers.
+
+### System Requirements
+- **OS**: Ubuntu 22.04 LTS or Debian 12
+- **CPU**: 4 vCPUs minimum
+- **RAM**: 8 GB RAM minimum
+- **Storage**: 50 GB SSD storage
+- **Runtime**: Docker Engine & Docker Compose
+
+---
+
+## 2. Managed Cloud Hosting
+
+Managed Cloud hosting is designed for organizations seeking a turnkey solution without local server management overhead.
+
+### Key Benefits
+- **Zero Maintenance**: Software updates, security patches, and database optimizations are handled automatically.
+- **Automated Backups**: Daily encrypted backups with point-in-time recovery.
+- **Scalability**: Seamless expansion across multiple branches or locations without purchasing local hardware.

@@ -14,41 +14,53 @@
   "topbarLinks": [
     {
       "name": "Website",
-      "url": "https://vritti.ai"
+      "url": "https://vritti.works"
     },
     {
       "name": "Console",
-      "url": "https://app.vritti.ai"
+      "url": "https://web.vritti.works"
     }
   ],
   "topbarCtaButton": {
     "name": "Get Started",
-    "url": "https://app.vritti.ai/sign-up"
+    "url": "https://web.vritti.works"
   },
   "tabs": [
     {
-      "name": "Getting Started",
-      "url": "index"
+      "name": "Console",
+      "url": "console"
     },
     {
-      "name": "Vritti Console",
-      "url": "console/overview"
+      "name": "Lens",
+      "url": "lens"
     },
     {
-      "name": "Vritti Lens",
-      "url": "lens/hardware-setup"
-    },
-    {
-      "name": "Vritti People",
-      "url": "people/getting-started"
+      "name": "People",
+      "url": "people"
     }
   ],
   "navigation": [
     {
-      "group": "Overview",
+      "group": "Getting Started",
       "pages": [
         "index",
         "quickstart"
+      ]
+    },
+    {
+      "group": "Trust & Compliance",
+      "pages": [
+        "trust/security-compliance",
+        "trust/statutory-compliance",
+        "trust/deployment-models",
+        "trust/faq"
+      ]
+    },
+    {
+      "group": "Architecture & Updates",
+      "pages": [
+        "trust/architecture",
+        "trust/changelog"
       ]
     },
     {
