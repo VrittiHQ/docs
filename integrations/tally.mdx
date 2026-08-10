@@ -1,0 +1,48 @@
+---
+title: Tally Prime Integration
+description: Synchronization between Vritti attendance, statutory payroll, and Tally Prime accounting ledgers.
+---
+
+# Tally Integration
+
+Virtually every business and institution across India relies on **Tally Prime** (or Tally 9) as their primary accounting software. Vritti provides direct synchronization with Tally to eliminate manual voucher entries and reconciliation errors.
+
+---
+
+## Integration Capabilities
+
+### 1. Automated Attendance-to-Payroll Ledger Sync
+Export monthly attendance summaries, loss-of-pay (LOP) days, and calculated gross salaries directly into Tally Payroll Vouchers without manual re-entry.
+
+### 2. Statutory Journal Entry Generation
+Automatically create accurate debit and credit vouchers for:
+- **EPF Employer Contribution** (3.67% EPF + 8.33% EPS + Administrative Charges)
+- **ESI Employer Contribution** (3.25%)
+- **Professional Tax (PT)** state liabilities
+- **TDS Deductions** under Section 192
+
+### 3. Cost Center & Department Mapping
+Map Vritti institutional departments (e.g., Teaching, Admin, Facilities, Security) directly to Tally Cost Centers for departmental P&L tracking.
+
+---
+
+## Integration Roadmap
+
+```
+┌─────────────────┐       ┌─────────────────┐       ┌─────────────────┐
+│   Vritti Core   │ ────> │  Vritti Tally   │ ────> │   Tally Prime   │
+│ Attendance/Pay  │       │     Adapter     │       │   XML / TDL     │
+└─────────────────┘       └─────────────────┘       └─────────────────┘
+```
+
+| Phase | Capability | Status |
+|:---|:---|:---|
+| **Phase 1** | One-Click XML Export for Tally Payroll Vouchers | Supported |
+| **Phase 2** | Local Tally Sync Utility (Automated background sync) | In Development |
+| **Phase 3** | Direct TDL (Tally Definition Language) Native Plugin | Planned |
+
+---
+
+## Request Custom Tally Setup
+
+If your institution uses a customized Tally TDL template or legacy accounting software (Zoho Books, Busy, Marg), contact our integration team at `team@vritti.works`.

@@ -15,6 +15,10 @@
     {
       "name": "Console",
       "url": "https://web.vritti.works"
+    },
+    {
+      "name": "Support",
+      "url": "mailto:team@vritti.works"
     }
   ],
   "topbarCtaButton": {
@@ -41,6 +45,18 @@
       "pages": [
         "index",
         "quickstart"
+      ]
+    },
+    {
+      "group": "AI & Voice Intelligence",
+      "pages": [
+        "ai/voice-agents"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/tally"
       ]
     },
     {
